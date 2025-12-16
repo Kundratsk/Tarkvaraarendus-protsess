@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERD</title>
+</head>
+<body>
+    <h1>Mis on ERD diagrammid?</h1>
+    <p>
+        ERD (Entity-Relationship Diagram) ehk olemidiagramm on visuaalne esitus andmebaasi struktuurist, mis näitab, kuidas erinevad andmeobjektid<br/>
+    (entiteedid) omavahel seotud on. ERD-d kasutatakse andmebaaside kavandamisel ja modelleerimisel, et mõista ja dokumenteerida andmete vahelisi <br/>
+    suhteid ning nende omadusi.<br/>
+    </p><br/><br/>
+    <h2>ERD võtmed</h2>
+    <p>
+        ERD-s kasutatakse erinevaid võtmeid, et määratleda entiteetide omadusi ja suhteid. Peamised võtmed on:<br/>
+        <ul>
+            <li><strong>Primaarvõti (Primary Key):</strong>Unikaalne tunnus, mis identifitseerib tabeli rea. Ei tohi olla tühi (NULL)</li><br/>
+            <li><strong>Võõrvõti (Foreign Key):</strong>Viitab teise tabeli Primary Key-le. Loob seose tabelite vahel</li><br/>
+            <li><strong> Liitvõti (Composite Key):</strong>Koosneb mitmest veerust, mis koos moodustavad unikaalse võtme.</li><br/>
+            <li><strong>Lihtsalt Võti (key):</strong>Üldnimetus veerule või veergudele, mida kasutatakse otsinguks või unikaalsuse tagamiseks, ei pruugi olla Primary Key</li><br/>
+        </ul>
+        <ul>
+        <p>
+            <li>Primary Key identifitseerib iga olemi rea.</li>
+            <li>Foreign Key seob olemitabelid omavahel.</li>
+            <li>Composite Key võimaldab kirjeldada M:N (mitu-mitmele seos) seoseid</li>
+            <li>Võtmed tagavad andmete tervikluse ja loogika andmebaasis</li>
+        </ul>
+        </p>
+    </p>
+    <h2>Ühenduselementide seletus</h2>
+    <p>
+        <ul>
+            <li>1:1 (üks-ühele) Ühel olemi real on seos täpselt ühe teise olemi reaga</li>
+            <li>1:N (üks-mitmele) Ühel olemi real on seos mitme teise olemi reaga</li>
+            <li>M:N (mitu-mitmele) Ühel olemi real on seos mitme teise olemi reaga, realiseeritakse vahetabeliga</li>
+        </ul>
+    </p>
+    <h2>ERD diagrammi sümbolid</h2>
+    <img height = 600 width = 600 src="..//pildid/ERD DIAGRAMM" alt="">
+    <img height = 300 width = 300 src="..//pildid/ERD sümbolid.png" alt="">
+    <h2>Mis peab olema olemitabelis</h2>
+    <p>
+        Olemi nimi (nt Kasutaja, Tellimus), vähemalt üks primary key, atribuudid (veerud), mis kirjeldavad olemit<br/>
+    </p>
+
+    <a href="https://enos.itcollege.ee/~priit/1.%20Andmebaasid/2.%20Loengumaterjalid/04.%20Andmemudelid%20ja%20ERD.pdf"></a>
+</body>
+</html>
