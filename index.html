@@ -3,8 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: #657469;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #ff6600;
+      text-decoration: underline;
+    }
+  </style>
+  <style>
+  .menu {
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+
+  .menu:hover {
+    background-color: #555;
+  }
+</style>
+<style>
+  .nupp {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #aa2f19;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .nupp:hover {
+    background-color: #1e7e34;
+  }
+</style>
+<style>
+  img {
+    border-radius: 10px;
+  }
+
+  img:hover {
+    transform: scale(2.0);
+  }
+</style>
+<style>
+.hover-ala {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.peidetud {
+  display: none;
+  margin-left: 10px;
+  color: #222;
+  font-weight: normal;
+}
+
+.hover-ala:hover .peidetud {
+  display: inline;
+}
+.peidetud {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  white-space: nowrap;
+}
+
+.hover-ala:hover .peidetud {
+  display: block;
+}
+</style>
+<style>.info-rida {
+  margin-bottom: 15px;
+}
+
+.pealkiri {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sisu {
+  display: none;
+  margin-top: 5px;
+  padding: 6px;
+  background-color: #ffffff;
+  border-left: 4px solid #0066cc;
+}
+
+.info-rida:hover .sisu {
+  display: block;
+}
+</style>
+<style>.minust {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.tekst {
+  flex: 1;
+}
+
+.pilt img {
+  width: 150px;
+  border-radius: 10px;
+}
+</style>
+
     <title>Minu TarkvaraarendusProtsessi Ainemapp</title>
 </head>
+
 <body>
     <h1>Tarkvaraarendusprotsessi tunni raames koostatud ainemapp</h1>
     <br/>
@@ -13,34 +137,63 @@
 
     </p>
     <h2>Tarkvara Arendusprotsess</h2>
-    <a href="SDLC/sdlc.html">Üldiselt - mis see on.</a>
-    <a href="./CASE/index.html">Case-vahendid</a>
-    <a href="./UML/index.html">Unified modeling language</a>
+    <a href="SDLC/sdlc.html" class="menu">Üldiselt - mis see on.</a>
+    <a href="./CASE/index.html" class="menu">Case-vahendid</a>
+    <a href="./UML/index.html" class="menu">Unified modeling language</a>
     <h3>Praktiline rakendus</h3>
-    <a href="BTC/index.html">Bitcoin calculator</a>
-    <a href="./PNC/index.html">Tooted ja Kategooriad</a>
+    <a href="BTC/index.html" class="menu">Bitcoini kalkulaator</a>
+    <a href="./PNC/index.html" class="menu">Tooted ja Kategooriad</a>
     <br>
     -------------------------------------------------
     <h2>Kes ma olen:</h2>
-    <table>
-        <tr>
-            <td>Minu nimi</td>
-            <td>Mida ma teen:</td>
-            <td>Kust ma tulen:</td>
-            <td>Pilt</td>
-        </tr>
-        <tr>
-            <td>Kristo Kundrats
-            <td>Olen kohalik koodi kirjutaja</td>
-            <td>Tulen Tallinnast</td>
-            <td> <img height="120"src="pildid/Nimetu.png" alt="">
-             </td>
-        </tr>
-        <tr>
-            <td colspan="4">
-                <a href="https://github.com/Kundratsk">Minu Githubi link.</a>
-            </td>
-        </tr>
-    </table>
+<div class ="minust">
+    <div class="info-rida">
+        <span class="pealkiri">Minu nimi</span>
+        <div class="sisu">Kristo Kundrats</div>
+    </div>
+
+    <div class="info-rida">
+        <span class="pealkiri">Mida ma teen</span>
+        <div class="sisu">Olen kohalik koodi kirjutaja</div>
+    </div>
+
+    <div class="info-rida">
+        <span class="pealkiri">Kust ma tulen</span>
+        <div class="sisu">Tulen Tallinnast</div>
+    </div>
+    <div class="pilt">
+        <img src="pildid/KristoKundrats.jpg" width="100" alt="Minu pilt">
+    </div>
+</div>
+    <table border="1">
+  <tr>
+    <th>Oskus</th>
+    <th>Tase</th>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>★☆☆☆☆</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>☆☆☆☆☆</td>
+  </tr>
+  <tr>
+    <td>Python</td>
+    <td>★★☆☆☆</td>
+  </tr>
+</table>
+    <br/>
+    -------------------------------------------------
+
+    <h2>Minu huvialad:</h2>
+    <ol>
+        <li>Videomängud</li>
+        <li>Arvutid</li>
+        <li>Sport</li>
+        <li>Muusika</li>
+    </ol>
+
+
 </body>
 </html>
