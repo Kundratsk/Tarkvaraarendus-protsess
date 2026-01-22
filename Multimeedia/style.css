@@ -1,0 +1,124 @@
+/* ===== ÜLDINE STIIL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+}
+
+/* ===== PEALKIRI ===== */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+header p {
+    opacity: 0.8;
+}
+
+/* ===== SISU ALA ===== */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* ===== KAARDID ===== */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+/* ===== MULTIMEEDIA ===== */
+img,
+video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ===== JALUS ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+/* ===== SISU KAART ===== */
+.section {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 25px 30px;
+    margin: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* ===== PEALKIRJAD ===== */
+.section h2 {
+    color: #7dd3fc;
+    border-left: 5px solid #38bdf8;
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+
+.section h3 {
+    color: #a5f3fc;
+    margin-top: 20px;
+}
+
+/* ===== PILDID ===== */
+.section img {
+    width: 180px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    margin-top: 10px;
+}
+
+/* ===== LINGI NUPP ===== */
+.link-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(56,189,248,0.6);
+}
