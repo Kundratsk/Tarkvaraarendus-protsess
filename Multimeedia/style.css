@@ -76,6 +76,8 @@ footer {
 }
 /* ===== SISU KAART ===== */
 .section {
+    max-width: 900px;
+    width: 100%;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 18px;
     padding: 25px 30px;
@@ -121,4 +123,48 @@ footer {
 .link-btn:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 25px rgba(56,189,248,0.6);
+}
+/* ===== LEHE KESKELE PANEMINE ===== */
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+/* ===== NAVIGATSIOON ===== */
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    background: #38bdf8;
+    color: black;
+}
+.page-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.page-nav a {
+    background: #38bdf8;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
