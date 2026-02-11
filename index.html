@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      text-align: center;
+    }
     body {
       background-color: #657469;
       font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
     }
 
     a {
@@ -124,6 +133,51 @@
   width: 150px;
   border-radius: 10px;
 }
+ol {
+  display: inline-block;
+  text-align: center;
+}
+.minust {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #222;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 100;
+}
+.dropdown-content li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.dropdown-content li a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 
     <title>Minu TarkvaraarendusProtsessi Ainemapp</title>
@@ -136,21 +190,30 @@
         Tarkvara Arendusprotsessi aines tehtud ainemapp, kus on selle aine ja kõikide teiste ainete ülesanded ja muud saavutused kuvatud
 
     </p>
-    <h2>Tarkvara Arendusprotsess</h2>
-    <a href="SDLC/sdlc.html" class="menu">Üldiselt - mis see on.</a>
-    <a href="./CASE/index.html" class="menu">Case-vahendid</a>
-    <a href="./UML/index.html" class="menu">Unified modeling language</a>
-    <a href="./SDLC/agile.html" class="menu">Agiilsed arendusmudelid</a>
-    
-    <h2>Multimeedia</h2>
-    <a href="Multimeedia/Multimeedia.html" class="menu">Multimeedia</a>
-
-    <h3>Praktiline rakendus</h3>
-    <a href="BTC/index.html" class="menu">Bitcoini kalkulaator</a>
-    <a href="./Projectlibre/digiturbe teostamine veebipoele.html" class="menu">Project libre</a>
-    <a href="targe25.list.html" class="menu">Klassikaaslaste portfooliod</a>
-    <br>
-    <h2>Kes ma olen:</h2>
+    <h2 class="dropdown">Tarkvara Arendusprotsess
+      <ul class="dropdown-content">
+        <li><a href="SDLC/sdlc.html" class="menu">Üldiselt - mis see on.</a></li>
+        <li><a href="./CASE/index.html" class="menu">Case-vahendid</a></li>
+        <li><a href="./UML/index.html" class="menu">Unified modeling language</a></li>
+        <li><a href="./SDLC/agile.html" class="menu">Agiilsed arendusmudelid</a></li>
+      </ul>
+    </h2>
+    <br/>
+    <h2 class="dropdown">Multimeedia
+      <ul class="dropdown-content">
+        <li><a href="Multimeedia/Multimeedia.html" class="menu">Multimeedia</a></li>
+      </ul>
+    </h2>
+    <br/>
+    <h2 class="dropdown">Praktiline rakendus
+      <ul class="dropdown-content">
+          <li><a href="BTC/index.html" class="menu">Bitcoini kalkulaator</a></li>
+          <li><a href="./Projectlibre/digiturbe teostamine veebipoele.html" class="menu">Project libre</a></li>
+          <li><a href="targe25.list.html" class="menu">Klassikaaslaste portfooliod</a></li>
+      </ul>
+    </h2>
+<br>
+<h2>Kes ma olen:</h2>
 <div class ="minust">
     <div class="info-rida">
         <span class="pealkiri">Minu nimi</span>
